@@ -1,18 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useReducer } from 'react';
 import './App.css';
 
 //components
 import TodoList from "./components/TodoList";
-import TodoForm from "./components/Form";
+
+
+//reducer
+import { initialState, reducer } from "./reducers/TodoReducer";
 
 function App() {
+  const [state, dispatch] = useReducer(reducer, initialState);
+  console.log(`This is the state from App.js`, state);
+
   return (
     <div className="App">
-      <TodoForm />
       <TodoList />
     </div>
   );
 }
 
 export default App;
+
+// newTodo={newTodo}
