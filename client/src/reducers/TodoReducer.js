@@ -4,7 +4,7 @@ export const initialState = {
     id: 3892987589,
 }
 
-export const todoReducer = (state, action) => {
+export const reducer = (state, action) => {
     switch(action.type) {
         case " ":
             return {
