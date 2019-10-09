@@ -1,5 +1,5 @@
 export const initialState = [{
-    item: "Learn about reducers",
+    item: "type in the box above and click 'Add and item' to get started",
     completed: false,
     id: 3892987589,
 }]

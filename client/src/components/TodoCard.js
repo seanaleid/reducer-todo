@@ -19,13 +19,17 @@ const TodoCardMap = ({ task, dispatch}) => {
 
     return (
         <div className="todo-card">
-            <div 
-                className={`task${task.completed ? ' completed' : ''}`}
-                onClick={toggleCompleted}
-            >
-                <h1>{task.item}</h1>
+            <div className="card-top">
+                <div 
+                    className={`task${task.completed ? ' completed' : ''}`}
+                    onClick={toggleCompleted}
+                >
+                    <h1>{task.item}</h1>
+                </div>
             </div>
-                <button onClick={clearCompletedTodo}>Clear Completed</button>
+            <div className="card-bottom">
+                <button className="button-card" onClick={clearCompletedTodo}>Clear Completed</button>
+            </div>
         </div>
     )
 }

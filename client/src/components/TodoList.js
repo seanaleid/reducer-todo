@@ -14,16 +14,18 @@ const TodoList = () => {
     );
 
     return (
-        <div className="container-card">
+        <div >
             <TodoForm dispatch={dispatch}/>
-            <h1>Hello world!!</h1>
-            {state.map(task => (
-                <TodoCardMap 
-                    key={task.id} 
-                    task={task} 
-                    dispatch={dispatch}
-                />
-            ))}
+            <div className="container-card">
+                {state.map(task => (
+                    <TodoCardMap 
+                        key={task.id} 
+                        task={task} 
+                        dispatch={dispatch}
+                        
+                    />
+                ))}
+            </div>
         </div>
     )
 
