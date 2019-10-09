@@ -21,7 +21,7 @@ const TodoList = () => {
                 <TodoCardMap 
                     key={task.id} 
                     task={task} 
-                    todo={dispatch}
+                    dispatch={dispatch}
                 />
             ))}
         </div>

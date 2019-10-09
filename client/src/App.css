@@ -6,15 +6,23 @@
   background: lightgrey;
   height: 50px;
   position: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+
 }
 
 .input {
   font-size: 2rem;
+  border: 5px solid black;
+  margin-right: 20px;
 }
 
 .button-form {
   font-size: 2rem;
   border-radius: 30px;
+  border: 5px solid black;
+
 }
 
 .container-card {
@@ -25,5 +33,17 @@
   width: 200px;
   border: 5px solid black;
   border-radius: 10px 50px;
-  padding-left: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-card-button {
+  width: 80%;
+
+}
+
+.task.completed {
+  text-decoration: line-through;
 }
