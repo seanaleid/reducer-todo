@@ -9,6 +9,8 @@
   padding-top: 20px;
   padding-left: 20px;
   padding-bottom: 20px;
+  border: 5px solid black;
+
 
 }
 
@@ -25,9 +27,9 @@
 
 }
 
-.container-card {
+/* .container-card {
   border: 1px solid blue;
-}
+} */
 
 .todo-card {
   width: 200px;

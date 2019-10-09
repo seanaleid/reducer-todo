@@ -10,6 +10,13 @@ const TodoCardMap = ({ task, dispatch}) => {
         });
     };
 
+    const clearCompletedTodo = () => {
+        dispatch ({
+            type: "REMOVE_TODO",
+            payload: task.id
+        });
+    }
+
     return (
         <div className="todo-card">
             <div 
@@ -17,8 +24,8 @@ const TodoCardMap = ({ task, dispatch}) => {
                 onClick={toggleCompleted}
             >
                 <h1>{task.item}</h1>
-                <button>Delete</button>
             </div>
+                <button onClick={clearCompletedTodo}>Clear Completed</button>
         </div>
     )
 }
