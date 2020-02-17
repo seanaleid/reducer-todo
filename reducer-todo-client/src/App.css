@@ -79,6 +79,7 @@
 }
 
 .task.completed {
+  color: red;
   text-decoration: line-through red;
   margin-bottom: 20px;
 }
